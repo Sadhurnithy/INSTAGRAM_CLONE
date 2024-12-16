@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Css Link -->
+     <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li>
+                <span class="logo">Instagram</span>
+                <button id="toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
+                </button>
+            </li>
+            <li class="active"><a href="./search.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                <span>Home</span></a>
+            </li>
+            <li><a href="./search.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                <span>Search</span></a>
+            </li>
+            <li><a href="./explore.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m300-300 280-80 80-280-280 80-80 280Zm180-120q-25 0-42.5-17.5T420-480q0-25 17.5-42.5T480-540q25 0 42.5 17.5T540-480q0 25-17.5 42.5T480-420Zm0 340q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Zm0-320Z"/></svg>
+                <span>Explore</span></a>
+            </li>
+            <li><a href="./reels.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m160-800 80 160h120l-80-160h80l80 160h120l-80-160h80l80 160h120l-80-160h120q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800Zm0 240v320h640v-320H160Zm0 0v320-320Z"/></svg>
+                <span>Reels</span></a>
+            </li>
+            <li><a href="./message.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                <span>Message</span></a>
+            </li>
+            <li><a href="./notification.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+                <span>Notification</span></a>
+            </li>
+            <li>
+                <button class="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                    <span>Create</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <li><a href="#">Post</a></li>
+                    <li><a href="#">Reel</a></li>
+                    <li><a href="#">Live</a></li>
+                </ul>
+            </li>
+            <li><a href="./profile.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                <span>Profile</span></a>
+            </li>
+            <li>
+                <button class="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>
+                    <span>Setting</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <li><a href="#">Your Activity</a></li>
+                    <li><a href="#">Archived</a></li>
+                    <li><a href="#">Saved</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main class="content">
+        <div class="container">
+            <h2>Hello-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum porro natus autem laboriosam temporibus totam nesciunt ut, labore mollitia eius.</p>
+        </div>
+        <div class="container">
+            <h2>Hello-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, excepturi eligendi! Ea ut, nam beatae hic soluta tempore autem optio asperiores facere officia libero minus excepturi, eius fugit veritatis error placeat et animi atque quod eveniet repellendus recusandae sunt. Exercitationem sint ipsa ullam adipisci, dignissimos perspiciatis officia iste neque reprehenderit?</p>
+        </div>
+        <div class="container">
+            <h2>Hello-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatum ad illum soluta, maiores est laborum, quia corporis autem veritatis quisquam exercitationem aperiam quo. Dolorem assumenda deserunt iure nesciunt cumque aliquid sed inventore repellat tempore, perspiciatis voluptates soluta sint magnam quibusdam laborum ullam ducimus eos amet! Amet magni velit eum repellendus quibusdam dolor maiores tenetur aliquam ea. Animi inventore sapiente quasi iste minus accusamus repudiandae iusto quidem illo nisi necessitatibus, hic iure consectetur maxime rem quas laudantium eos similique libero? Aliquid officia aspernatur perspiciatis, dolor explicabo illum tempore totam natus! Odio inventore qui et harum officiis repellendus natus repellat accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias sapiente, repudiandae molestiae facilis repellendus optio, nesciunt adipisci similique nam doloremque veritatis delectus possimus mollitia sit sequi sed error molestias. Consequatur eligendi repudiandae dolorem, natus fuga nisi sed fugit cumque dolor minima, maxime laborum animi. Est nisi corporis at, animi quidem hic illum, officiis eos omnis, voluptatem doloremque? Sapiente perspiciatis officiis impedit sequi, reiciendis, exercitationem nobis dolor error quam dolorem aut similique? Soluta illo quaerat aliquid id ipsum consequatur mollitia accusantium, iure maiores alias. Inventore ullam explicabo sint atque, eveniet repellat id est harum voluptate nesciunt tempore dolorum in non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora beatae earum facere perspiciatis, consectetur aspernatur maiores nesciunt iusto laudantium voluptatem sunt, officia aliquid asperiores sint. Voluptatum ut molestias consequatur illo animi perspiciatis doloremque necessitatibus tempora provident voluptatibus fuga vel doloribus, earum iste! Minima perferendis quasi facilis quas magnam nisi dolore veniam quia ratione, delectus, dolorem cupiditate vitae quae ipsa quibusdam? Numquam vero minus aliquam maiores quod! Assumenda maiores, eligendi necessitatibus dolorum quasi fuga cupiditate corporis odio atque explicabo facere et adipisci eveniet molestiae veritatis tenetur nisi. Cumque earum, porro dolorem iusto officia ex accusamus maxime, sint ipsam ratione debitis dolore.</p>
+        </div>
+    </main>
+    
+</body>
+</html>
